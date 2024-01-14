@@ -1,0 +1,20 @@
+{
+    "name": "alexstocker/3dviewer-for-owncloud",
+    "description": "3D model viewer for owncloud",
+    "type": "project",
+    "version": "0.0.1",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/alexstocker/3dviewer-for-owncloud.git"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {},
+    "autoload": {},
+    "autoload-dev": {}
+}
