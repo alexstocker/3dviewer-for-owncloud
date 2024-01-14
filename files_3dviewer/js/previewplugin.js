@@ -50,8 +50,10 @@
 
         loadFile: function(dir, filename, success, failure) {
             this.loadControls(filename, _self.currentContext);
-            var stl_viewer=new StlViewer(document.getElementById("viewer_container"), { models: [ {id:0, filename:"/remote.php/webdav/"+filename} ] });
-            console.log(stl_viewer);
+            console.log(filename);
+            console.log(dir);
+            var stl_viewer=new StlViewer(document.getElementById("viewer_container"), { models: [ {id:0, filename:"/remote.php/webdav"+dir+"/"+filename} ] });
+            // console.log(stl_viewer);
             return true;
             $.get(
                 OC.generateUrl('/apps/Files_3dViewer/loadfile'),
