@@ -91,3 +91,13 @@
     white-space: nowrap;
 }
 
+.icon_filetype.stl {
+    background-image: url("../img/filetypes/stl.svg") !important;
+    background-size: 32px;
+}
+
+.icon_filetype.obj {
+    background-image: url("../img/filetypes/obj.svg") !important;
+    background-size: 32px;
+}
+
