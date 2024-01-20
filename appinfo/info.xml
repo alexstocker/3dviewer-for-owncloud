@@ -17,6 +17,7 @@ Supported file types:
 	<author>Alexander Stocker</author>
 	<namespace>Files_3dViewer</namespace>
 	<version>0.0.1</version>
+	<category>tools</category>
 
 	<dependencies>
 		<owncloud min-version="10.0" max-version="10" />
