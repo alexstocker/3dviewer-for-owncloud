@@ -65,7 +65,7 @@
         },
 
         loadFile: function(dir, filename, success, failure) {
-            this.loadControls(filename, _self.currentContext);
+            this.loadControls(filename, null);
             var stl_viewer = new StlViewer(
                 document.getElementById("viewer_container"),
                 {
