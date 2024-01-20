@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<info>
+	<id>files_3dviewer</id>
+	<category>productivity</category>
+	<name>3D File Viewer</name>
+	<description><![CDATA[# A 3D model viewer for owncloud.
+
+Supported file types:
+
+- obj | Wavefront
+- stl | Stereolithography Standard Tesselation/Triangle Language
+
+]]></description>
+	<summary>3D model viewer for owncloud</summary>
+
+	<licence>AGPL</licence>
+	<author>Alexander Stocker</author>
+	<namespace>Files_3dViewer</namespace>
+	<version>0.0.1</version>
+	<category>tools</category>
+
+	<dependencies>
+		<owncloud min-version="10.0" max-version="10" />
+		<php min-version="7.2" />
+	</dependencies>
+
+	<documentation>
+		<user>https://github.com/alexstocker/3dviewer-for-owncloud/wiki</user>
+		<admin>https://github.com/alexstocker/3dviewer-for-owncloud/wiki</admin>
+		<developer>https://github.com/alexstocker/3dviewer-for-owncloud/wiki</developer>
+	</documentation>
+
+	<repository type="git">https://github.com/alexstocker/3dviewer-for-owncloud.git</repository>
+	<bugs>https://github.com/alexstocker/3dviewer-for-owncloud/issues</bugs>
+	<website>https://www.html5live.at/3d-viewer-for-owncloud/</website>
+
+	<screenshot>https://www.html5live.at/wp-content/uploads/2024/01/3d-file-viewer-for-owncloud-context-menu.png</screenshot>
+	<screenshot>https://www.html5live.at/wp-content/uploads/2024/01/3d-file-viewer-for-owncloud.png</screenshot>
+
+</info>

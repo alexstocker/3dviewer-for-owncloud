@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg1273"
+   version="1.0"
+   width="16"
+   height="16"
+   sodipodi:docname="stl.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1025"
+     id="namedview5841"
+     showgrid="false"
+     inkscape:zoom="14.75"
+     inkscape:cx="7.0847458"
+     inkscape:cy="8"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1273" />
+  <metadata
+     id="metadata1279">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs1277" />
+  <path
+     fill="#969696"
+     id="path1271"
+     d="m2.3501 1.0014c-0.19751 0.0382-0.35351 0.23331-0.35001 0.43742v13.123c0.000005 0.22905 0.20523 0.43745 0.43079 0.43746l11.139 0.001c0.22556-0.000006 0.43078-0.20841 0.43079-0.43746v-10.143c-0.004-0.06684-0.022-0.13284-0.054-0.19135l-3.3121-3.1989c-0.043-0.0164-0.088-0.0256-0.134-0.0274l-8.0699-0.001c-0.02684-0.0026-0.05393-0.0026-0.08077 0z"
+     style="color:#000000;block-progression:tb;text-transform:none;text-indent:0" />
+  <rect
+     ry="0.30935922"
+     y="10.718796"
+     x="2.3864853"
+     height="3.8448932"
+     width="11.159028"
+     id="rect5688"
+     style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.18897638;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+  <text
+     id="text4990"
+     y="13.988739"
+     x="4.5227165"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.75053215px;line-height:1.25;font-family:'Nunito Sans';-inkscape-font-specification:'Nunito Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#00a22d;fill-opacity:1;stroke:none;stroke-width:0.09376255;"
+     xml:space="preserve"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.75053215px;font-family:'Nunito Sans';-inkscape-font-specification:'Nunito Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#00a22d;fill-opacity:1;stroke-width:0.09376255;"
+       y="13.988739"
+       x="4.5227165"
+       id="tspan4988">STL</tspan></text>
+  <g
+     style="opacity:0.98999999;fill:#00a22d;fill-opacity:1;stroke:#ffffff;stroke-width:0.18897638;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="g5674">
+    <path
+       points="4.6424994,7.6435837 6.425459,6.6869283 7.3010832,2.999886 5.5181236,3.9565414 "
+       d="M 5.5181236,3.9565414 4.6424994,7.6435837 6.425459,6.6869283 7.3010832,2.999886 Z"
+       style="fill:#00a22d;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.16526483;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path5676" />
+    <path
+       points="11.218594,4.5496295 10.34297,8.2366718 6.425459,6.6869283 7.3010832,2.999886 "
+       d="M 7.3010832,2.999886 11.218594,4.5496295 10.34297,8.2366718 6.425459,6.6869283 Z"
+       style="fill:#00a22d;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.16526483;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path5686" />
+    <path
+       points="8.5600101,9.1933272 10.34297,8.2366718 6.425459,6.6869283 4.6424994,7.6435837 "
+       d="M 4.6424994,7.6435837 8.5600101,9.1933272 10.34297,8.2366718 6.425459,6.6869283 Z"
+       style="fill:#00a22d;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.16526483;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path5684" />
+    <path
+       points="9.4356343,5.5062849 11.218594,4.5496295 7.3010832,2.999886 5.5181236,3.9565414 "
+       d="M 5.5181236,3.9565414 9.4356343,5.5062849 11.218594,4.5496295 7.3010832,2.999886 Z"
+       style="fill:#00a22d;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.16526483;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path5678" />
+    <path
+       points="8.5600101,9.1933272 10.34297,8.2366718 11.218594,4.5496295 9.4356343,5.5062849 "
+       d="M 9.4356343,5.5062849 8.5600101,9.1933272 10.34297,8.2366718 11.218594,4.5496295 Z"
+       style="fill:#00a22d;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.16526483;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path5682" />
+    <path
+       points="9.4356343,5.5062849 8.5600101,9.1933272 4.6424994,7.6435837 5.5181236,3.9565414 "
+       d="M 5.5181236,3.9565414 9.4356343,5.5062849 8.5600101,9.1933272 4.6424994,7.6435837 Z"
+       style="fill:#00a22d;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.16526483;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path5680" />
+  </g>
+</svg>
