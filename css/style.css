@@ -24,6 +24,30 @@
     box-sizing: border-box;
 }
 
+#canvas_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#loading_overlay {
+    z-index: 1000;
+    /*background: rgba(51, 170, 51, .1);*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#loading_overlay img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
 #viewer_wrap {
     box-sizing: border-box;
     padding-top: 46px;
@@ -100,4 +124,6 @@
     background-image: url("../img/filetypes/obj.svg") !important;
     background-size: 32px;
 }
+
+.p-total {height:3em; width:80%;}
 
