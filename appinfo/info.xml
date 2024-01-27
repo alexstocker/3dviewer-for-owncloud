@@ -3,8 +3,7 @@
 	<id>files_3dviewer</id>
 	<category>productivity</category>
 	<name>3D File Viewer</name>
-	<description><![CDATA[# A 3D model viewer for owncloud.
-
+	<description><![CDATA[# 3D model viewer for owncloud.
 Supported file types:
 
 - obj | Wavefront
@@ -16,7 +15,7 @@ Supported file types:
 	<licence>AGPL</licence>
 	<author>Alexander Stocker</author>
 	<namespace>Files_3dViewer</namespace>
-	<version>0.0.1</version>
+	<version>0.1.0</version>
 	<category>tools</category>
 
 	<dependencies>
@@ -34,7 +33,7 @@ Supported file types:
 	<bugs>https://github.com/alexstocker/3dviewer-for-owncloud/issues</bugs>
 	<website>https://www.html5live.at/3d-viewer-for-owncloud/</website>
 
-	<screenshot>https://www.html5live.at/wp-content/uploads/2024/01/3d-file-viewer-for-owncloud-context-menu.png</screenshot>
 	<screenshot>https://www.html5live.at/wp-content/uploads/2024/01/3d-file-viewer-for-owncloud.png</screenshot>
+	<screenshot>https://www.html5live.at/wp-content/uploads/2024/01/3d-file-viewer-for-owncloud-context-menu.png</screenshot>
 
 </info>

@@ -4,7 +4,7 @@
 
 This application integrates the [viewstl.js](https://github.com/omrips/viewstl) library into ownCloud. Using this application users can view 3D models online without downloading the file.
 
-**Supported Files**
+**Supported file types**
 
 * STL
 * OBJ
@@ -13,7 +13,7 @@ This application integrates the [viewstl.js](https://github.com/omrips/viewstl) 
 
 ### Owncloud Marketplace
 
-* ... comming soon
+* [3D File Viewer](https://marketplace.owncloud.com/apps/files_3dviewer)
 
 ### Manuall
 

@@ -1,6 +1,6 @@
 ## 3D File Viewer for Owncloud
 
-### 0.0.2 (UNRELEASED)
+### 0.1.0 (UNRELEASED)
 * [NOREF] ADDED Progressbar and spinner
 
 ### 0.0.1 (2024-01-20)
