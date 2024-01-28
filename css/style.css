@@ -26,6 +26,7 @@
 
 #canvas_container {
     position: absolute;
+    background-color: #5d5d5d;
     top: 0;
     left: 0;
     height: 100%;
@@ -46,6 +47,7 @@
     position: absolute;
     left: 50%;
     top: 50%;
+    width: 3em;
 }
 
 #viewer_wrap {
@@ -110,7 +112,7 @@
     font-weight: bolder;
     text-overflow: ellipsis;
     padding: 12px 0 0 14px;
-    max-width: 218px;
+    max-width: 15em;
     overflow: hidden;
     white-space: nowrap;
 }
@@ -125,5 +127,33 @@
     background-size: 32px;
 }
 
-.p-total {height:3em; width:80%;}
+.p-total {
+    height: 0.5em;
+    width: 100%;
+    vertical-align: 0.2em;
+}
+
+#progress_total {
+    position: absolute;
+    top: 34px;
+    width: 100%;
+    z-index: 3000;
+    border-radius: 0;
+    height: 0.5em
+}
+
+#pbtotal {
+    border-radius: 0;
+}
+
+#pbtotal[value]::-webkit-progress-bar {
+    background-color: #ededed;
+    border-radius: 0;
+}
+
+#pbtotal[value]::-webkit-progress-value {
+    border-radius: 0;
+    background-color: #041e42;
+}
+
 
