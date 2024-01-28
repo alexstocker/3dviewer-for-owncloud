@@ -108,7 +108,7 @@
                             color: "#d7d7d7",
                             animation: {
                                 delta: {
-                                    rotationx: 0, rotationy: 0, rotationz: 1, msec: 1000, loop: true
+                                    rotationx: 0, rotationy: 0, rotationz: 1, msec: 1000, loop: false
                                 },
                             }
                         }
