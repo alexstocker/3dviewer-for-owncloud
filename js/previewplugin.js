@@ -108,7 +108,7 @@
                             color: "#d7d7d7",
                             animation: {
                                 delta: {
-                                    rotationx: 0, rotationy: 0, rotationz: 1, msec: 1000, loop: false
+                                    rotationx: 0, rotationy: 0, rotationz: 1, msec: 2500, loop: true
                                 },
                             }
                         }
@@ -116,6 +116,7 @@
                     // jszip_path:"jszip.min.js",
                     // jszip_utils_path:"jszip-utils.min.js",
                     // load_three_files: "/",
+                    controls: 1,
                     loading_progress_callback: this._loadingProgress,
                     all_loaded_callback: this.init_orientation
                 });
@@ -151,6 +152,10 @@
 
             var distance = Math.max(Math.abs(this.camera.position.x), Math.abs(this.camera.position.y), Math.abs(this.camera.position.z));
 
+
+            // console.log(last_camera_state.target);
+            // console.log(distance);
+            //
             this.set_camera_state({
                 position: {x: distance, y: distance, z: distance},
                 up: {x: 0, y: 0, z: 1},

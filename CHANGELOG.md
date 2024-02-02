@@ -1,7 +1,8 @@
 ## 3D File Viewer for Owncloud
 
 ### 0.1.0 (UNRELEASED)
-* #4 Set Initeal cam position to ISO. Style changes.
+* #4 MODIFIED Initial animation. Set trackball controls default
+* #4 Set Initial cam position to ISO. Style changes.
 * #3 ADDED Progressbar and spinner
 
 ### 0.0.1 (2024-01-20)
