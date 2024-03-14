@@ -8,6 +8,7 @@ This application integrates the [viewstl.js](https://github.com/omrips/viewstl) 
 
 * STL
 * OBJ
+* 3MF
 
 ## Install
 

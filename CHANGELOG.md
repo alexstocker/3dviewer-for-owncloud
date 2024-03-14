@@ -1,6 +1,7 @@
 ## 3D File Viewer for Owncloud
 
 ### 0.1.0 (UNRELEASED)
+* #6 Added 3MF file type support
 * #4 MODIFIED Initial animation. Set trackball controls default
 * #4 Set Initial cam position to ISO. Style changes.
 * #3 ADDED Progressbar and spinner

@@ -127,6 +127,11 @@
     background-size: 32px;
 }
 
+.icon_filetype.ft-3mf {
+    background-image: url("../img/filetypes/3mf.svg") !important;
+    background-size: 32px;
+}
+
 .p-total {
     height: 0.5em;
     width: 100%;
