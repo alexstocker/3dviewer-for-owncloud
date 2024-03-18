@@ -3,7 +3,7 @@
     OCA.Files3dViewer = OCA.Files3dViewer || {};
 
     /**
-     * @namespace OCA.FilesStlViewer.PreviewPlugin
+     * @namespace OCA.Files3dViewer.PreviewPlugin
      */
     OCA.Files3dViewer.PreviewPlugin = {
         attach: function (fileList) {
@@ -11,41 +11,21 @@
         },
 
         _extendFileActions: function (fileActions) {
-            var mimes = [
-                'model/stl',
-                'application/octet-stream',
-                'model/obj',
-                // 'application/vnd.ms-3mfdocument',
-                // 'application/vnd.ms-package.3dmanufacturing-3dmodel+xml',
-                // 'application/vnd.ms-printing.printticket+xml',
-                // 'model/3mf'
-            ];
-
-            var fileExtensions = [
-                'stl',
-                'obj',
-                // '3mf'
-            ];
-
             var self = this;
-
-            $.each(mimes, function (key, value) {
-                fileActions.registerAction({
-                    name: 'Files3dViewer',
-                    displayName: t('Files_3dViewer', '3D Viewer'),
-                    mime: value,
-                    iconClass: 'icon-toggle',
-                    permissions: OC.PERMISSION_READ,
-                    actionHandler: function (fileName, context) {
-                        self.loadContainer(fileName, context.dir);
-                    },
-                    icon: function () {
-                        return OC.imagePath('files_3dviewer', 'eye');
-                    }
-                });
-                fileActions.setDefault(value, 'Files3dViewer');
+            fileActions.registerAction({
+                name: 'Files3dViewer',
+                displayName: t('Files_3dViewer', '3D Viewer'),
+                mime: 'application/octet-stream',
+                iconClass: 'icon-toggle',
+                permissions: OC.PERMISSION_READ,
+                actionHandler: function (fileName, context) {
+                    self.loadContainer(fileName, context.dir);
+                },
+                icon: function () {
+                    return OC.imagePath('files_3dviewer', 'eye');
+                }
             });
-
+            fileActions.setDefault('application/octet-stream', 'Files3dViewer');
         },
 
         loadContainer: function (fileName, context) {
@@ -127,7 +107,7 @@
             var total = 0;
 
             Object.keys(load_status).forEach(function (model_id) {
-                if (load_status[model_id].load_session == load_session) {
+                if (load_status[model_id].load_session === load_session) {
                     loaded += load_status[model_id].loaded;
                     total += load_status[model_id].total;
                 }

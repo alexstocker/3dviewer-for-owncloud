@@ -1,29 +1,23 @@
 (function (OCA) {
-    OCA.FilesStlViewer = OCA.FilesStlViewer || {};
+    OCA.Files3dViewer = OCA.Files3dViewer || {};
 
-    OCA.FilesStlViewer.FileInfoPlugin = {
+    OCA.Files3dViewer.Extensions = [
+        'stl',
+        'obj',
+        '3mf'
+    ];
+
+    /**
+     * @namespace OCA.Files3dViewer.FileInfoPlugin
+     */
+    OCA.Files3dViewer.FileInfoPlugin = {
         attach: function (fileList) {
-            var mimes = [
-                'model/stl',
-                'application/octet-stream',
-                'model/obj',
-                // 'application/vnd.ms-3mfdocument',
-                // 'application/vnd.ms-package.3dmanufacturing-3dmodel+xml',
-                // 'application/vnd.ms-printing.printticket+xml',
-                // 'model/3mf'
-            ];
-
-            var fileExtensions = [
-                'stl',
-                'obj',
-                '3mf'
-            ];
-
             var oldCreateRow = fileList._createRow;
-            fileList._createRow = function(fileData) {
+            fileList._createRow = function(FileInfo) {
                 var $tr = oldCreateRow.apply(this, arguments);
-                if (mimes.indexOf(fileData.mimetype) >= 0) {
-                    var fileExtension = fileData.name.slice(fileData.name.lastIndexOf(".")).replace(/[.]+/, '');
+                var fileExtension = FileInfo.name.slice(FileInfo.name.lastIndexOf(".")).replace(/[.]+/, '');
+
+                if (FileInfo.type === 'file' && OCA.Files3dViewer.Extensions.indexOf(fileExtension) !== -1) {
                     var $thumbnailDiv = $tr.find('div.thumbnail');
 
                     if (fileExtension === '3mf') {
@@ -31,7 +25,7 @@
                     }
 
                     $thumbnailDiv.addClass('icon_filetype ' +fileExtension);
-                    fileData.icon = function () {
+                    FileInfo.icon = function () {
                         return OC.imagePath('files_3dviewer', 'filetypes/'+fileExtension);
                     }
                 }
@@ -41,4 +35,4 @@
     }
 })(OCA);
 
-OC.Plugins.register('OCA.Files.FileList', OCA.FilesStlViewer.FileInfoPlugin);
+OC.Plugins.register('OCA.Files.FileList', OCA.Files3dViewer.FileInfoPlugin);
