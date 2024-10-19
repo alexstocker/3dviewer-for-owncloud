@@ -33,17 +33,9 @@
                 id: 'Files_3dViewer'
             });
 
-            var spinner = function () {
-                return OC.imagePath('files_3dviewer', 'loading-spinner.gif');
-            }
-
-            // console.log(spinner);
-
             var $viewerOverlay = $('<div id="viewer_overlay"></div>');
             var $viewerContainer = $('<div id="viewer_container"></div>');
             var $canvasContainer = $('<div id="canvas_container"></div>');
-            // var $loadingOverlay = $('<div id="loading_overlay"><img src="' + OC.imagePath('core', 'loading.gif') + '"></div>');
-            // var $loadingOverlay = $('<div id="loading_overlay"><img src="../files_3dviewer/img/loading_spinner.gif"></div>');
             var $loadingOverlay = $('<div id="loading_overlay"><img src="' + OC.imagePath('files_3dviewer', 'loading_spinner.gif') + '"></div>');
 
             $viewerContainer.append($canvasContainer);
@@ -63,19 +55,7 @@
 
             var element = document.getElementById("canvas_container");
 
-            var camera_state = {
-                "position": {"x": 100, "y": 100, "z": 74.39999999999999},
-                "up": {"x": 100, "y": 1, "z": 1000},
-                "target": {"x": 100, "y": 100, "z": 100}
-            };
-
-            var init_state = {
-                "position": {"x": 0, "y": 0, "z": 0},
-                "up": {"x": 0, "y": 0, "z": 0},
-                "target": {"x": 0, "y": 0, "z": 0}
-            };
-
-            var stl_viewer = new StlViewer(
+            new StlViewer(
                 element,
                 {
                     models: [
@@ -93,49 +73,18 @@
                             }
                         }
                     ],
-                    // jszip_path:"jszip.min.js",
-                    // jszip_utils_path:"jszip-utils.min.js",
-                    // load_three_files: "/",
                     controls: 1,
-                    loading_progress_callback: this._loadingProgress,
                     all_loaded_callback: this.init_orientation
                 });
         },
 
-        _loadingProgress: function (load_status, load_session) {
-            var loaded = 0;
-            var total = 0;
-
-            Object.keys(load_status).forEach(function (model_id) {
-                if (load_status[model_id].load_session === load_session) {
-                    loaded += load_status[model_id].loaded;
-                    total += load_status[model_id].total;
-                }
-            });
-
-            document.getElementById("pbtotal").value = loaded / total;
-
-            if (loaded === total) {
-                $('#loading_overlay').fadeOut(1000, function () {
-                    $(this).remove();
-                });
-                $('#progress_total').fadeOut(1000, function () {
-                    $(this).remove();
-                });
-            }
-        },
-
-        init_orientation: function (stl_viewer) {
+        init_orientation: function () {
             var last_camera_state = this.get_camera_state();
 
             if (!last_camera_state) return;
 
             var distance = Math.max(Math.abs(this.camera.position.x), Math.abs(this.camera.position.y), Math.abs(this.camera.position.z));
 
-
-            // console.log(last_camera_state.target);
-            // console.log(distance);
-            //
             this.set_camera_state({
                 position: {x: distance, y: distance, z: distance},
                 up: {x: 0, y: 0, z: 1},
@@ -143,12 +92,19 @@
             });
 
             this.set_rotation(1, Math.PI / 10, -(Math.PI / 10), Math.PI, 0);
+
+            $('#loading_overlay').fadeOut(1000, function () {
+                $(this).remove();
+            });
+            $('#progress_total').fadeOut(1000, function () {
+                $(this).remove();
+            });
         },
 
         /**
          * Load the editor control bar
          */
-        loadControls: function (file, context) {
+        loadControls: function (file) {
             var html =
                 '<small class="filename">' + escapeHTML(file) + '</small>';
 
