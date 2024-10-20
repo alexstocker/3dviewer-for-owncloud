@@ -32,5 +32,5 @@ This application integrates the [viewstl.js](https://github.com/omrips/viewstl) 
 ### Screenshots
 
 ![Screenshot 3D file viewer for owncloud context menu](https://www.html5live.at/wp-content/uploads/2024/01/3d-file-viewer-for-owncloud-context-menu.png)
-![Screenshot 3D file viewer for owncloud ](https://www.html5live.at/wp-content/uploads/2024/01/3d-file-viewer-for-owncloud.png)
+![Screenshot 3D file viewer for owncloud ](https://www.html5live.at/wp-content/uploads/2024/10/3d-file-viewer-for-owncloud-quidooo.png)
 
