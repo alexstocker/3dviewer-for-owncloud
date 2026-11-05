@@ -1,6 +1,7 @@
 ## 3D File Viewer for Owncloud
 
 ### 0.1.0 (UNRELEASED)
+* [NOREF] Added OC11 support
 * #9 FIXED Remove Content-Length Response Header dependency, and cleanup obsolete code
 * #6 Use file type extensions instead of mime types
 * #6 Added 3MF file type support
